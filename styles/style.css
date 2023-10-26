@@ -20,7 +20,7 @@ html {
 
 .page {
   inline-size: 1200px;
-  block-size: 100%;
+  block-size: 800px;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -93,6 +93,11 @@ fieldset {
 }
 
 .search-form__label:has(:focus-visible) {
+	outline: 1px solid currentColor;
+	outline-offset: 1px;
+}
+
+:focus-visible {
 	outline: 1px solid currentColor;
 	outline-offset: 1px;
 }
@@ -218,11 +223,6 @@ fieldset {
 	font-weight: 400;
 	line-height: 16.2px; /* 90% */
 }
-
-.content__video-card-description-container { 
-	padding: 2px;
-	padding-top: 6px;
-} /*иначе outline становится кривым */
 
 .content__list-item:not(:last-child) {
 	margin-bottom: 30px;
